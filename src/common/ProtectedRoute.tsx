@@ -21,7 +21,6 @@ const ProtectedRoute = () => {
   if (!location.pathname.startsWith(redirectPath)) {
     return <Navigate to={redirectPath} replace />;
   }
-
   return <Outlet />;
 };
 
